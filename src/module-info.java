@@ -1,0 +1,8 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+module CCJavaGrundlagenJMiB251224 {
+}
