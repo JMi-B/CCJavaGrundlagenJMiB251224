@@ -4,44 +4,46 @@ import java.util.Scanner;
 
 public class BMI3 {
 	
-	// BMI mit Rundung und Eingabeaufforderung
+	/* BMI mit Rundung und Eingabeaufforderung
+	* Mit ChatGBT gelöst
+	* Ich habe noch nicht verstanden wie alles zusammen hängt
+	* Achte auf deine Klammern
+	*/
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		berechnenBmi(1.75, 85.0);
+			berechnenBmi();
 	}
 	
 
-	public static void berechnenBmi(double groesse, double gewicht) {
+	public static void berechnenBmi() {
 		
-			
-		double bmi = gewicht/(groesse*groesse);
-	
-	
-		double rundBmi = 0;
-
-		rundBmi = Math.round(bmi);
-		
-		System.out.println(bmi);
-		System.out.println(rundBmi);
-		
-		{
-			
-			try (Scanner scanner = new Scanner(System.in)) {
-				System.out.println("Whats youre name?");
-				String name = scanner.next();
+		Scanner scanner = new Scanner(System.in);
 				
-				System.out.println("Enter your age");
-				int age = scanner.nextInt();
+			
+			try  {
+				System.out.println("Wie groß bist du in Meter?");
+				double groesse = scanner.nextDouble();
 				
-						System.out.println("Your name is: " + name + " and your age ist " + age);
+				System.out.println("Wieviel weigst du in Kilogramm?");
+				double gewicht = scanner.nextDouble();
+				
+						System.out.println("Du bist " + groesse + " m groß und wiegst " + gewicht + " kg.");
+			
+			double bmi = gewicht/(groesse*groesse);
+		
+			double rundBmi = Math.round(bmi);
+		
+			System.out.println("Dein BMI ist genau " + bmi + ".");
+			System.out.println("Gerundet beträgt Dein BMI  " + rundBmi + "." );
+		
+				} finally {
+				scanner.close();
 			}
+			
+	}
+		
+	
 
 		}
-
-	
-		
-	
-
-	}	}
