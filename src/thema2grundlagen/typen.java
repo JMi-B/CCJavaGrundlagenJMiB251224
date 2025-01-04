@@ -1,4 +1,4 @@
-package thema1grundlagen;
+package thema2grundlagen;
 
 public class typen {
 	public static void main (String [] arg) {
