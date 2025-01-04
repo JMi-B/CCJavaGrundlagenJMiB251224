@@ -1,4 +1,4 @@
-package thema2grundlagen;
+package thema2datentypen;
 
 public class typen {
 	public static void main (String [] arg) {
