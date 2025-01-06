@@ -28,6 +28,7 @@ public class typen {
 		System.out.println(x + y + "z");
 		
 		//2.3 g (1 || 0) Fehler der Operator || OR erwartet boolan true false keine int
+		// false ist hier toter Code
 		//System.out.println((1 || 0));
 		System.out.println((true || false));
 	}
