@@ -22,8 +22,8 @@ public class Felder2 {
 		}
 
 		// Array1 seperat auslesen und Ausgeben
-		for (int zahl : array1) {
-		 System.out.println("Der Werte des 1. Array: " + zahl);
+		for (int zahl1 : array1) {
+		 System.out.println("Der Werte des 1. Array: " + zahl1);
 			}
 		
 		// Array2 Länge festlegen
@@ -41,8 +41,8 @@ public class Felder2 {
 				}
 
 				// Array2 seperat auslesen und Ausgeben
-				for (int zahl : array2) {
-				 System.out.println("Der Werte des 2. Array: " + zahl);
+				for (int zahl2 : array2) {
+				 System.out.println("Der Werte des 2. Array: " + zahl2);
 					}
 	}
 }
