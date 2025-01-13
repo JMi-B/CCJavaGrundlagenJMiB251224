@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class GroestessElement2 {
 	// Aufgabe 1.2.1 Neuer Ansatz weil Array.sort mich nicht weiter bringt 
+	// !ufgabe 1.2.2 Index mitausgeben
 	
 	public static void main(String[] args) {
 		

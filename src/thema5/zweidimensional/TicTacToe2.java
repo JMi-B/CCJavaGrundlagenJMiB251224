@@ -24,14 +24,15 @@ public class TicTacToe2 {
 		ttt[1][0] = 'O';
 		ttt[2][0] = 'O';
 
-		System.out.print("Nachher: ");
+		System.out.println("Nachher: ");
 		spielFeldAusgeben(ttt);
 
 		// Ausgabe des Spielfelds
 	}
 
 	public static void spielFeldAusgeben(char[][] ttt) {
-		for (int i = 0; i < ttt[i].length; i++) { 
+		
+		for (int i = 0; i < ttt.length; i++) { 			
 			for (int j = 0; j < ttt[i].length; j++) { 
 		System.out.print(ttt[i][j] + " | ");
 			}
