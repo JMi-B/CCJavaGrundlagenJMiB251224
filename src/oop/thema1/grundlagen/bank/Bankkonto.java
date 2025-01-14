@@ -2,23 +2,37 @@ package oop.thema1.grundlagen.bank;
 
 public class Bankkonto {
 	//Attribute
-	public static String kontonummer;
-	public static double kontostand;
-	public static String kunde;
+	public  String kontoNummer;
+	public  double kontoStand;
+	public Kunde kontoInhabe;
 	
 	//default Construktor
-		Bankkonto(){}
+		Bankkonto(String string1, int int1, String string2){}
 		
 	//Methoden
-	public static void einzahlen() {
-		
+	public  void einzahlen(double betrag) {
+		kontoStand += betrag;
 	}
-public static void auszahlen() {
+	
+	public void auszahlen(double betrag) {
+		kontoStand -= betrag;
 		
 	}
 
-public String toString() {
-	return "Kontoinformation: Kontonummer" + kontonummer + ", Kontostand: " + kontostand + ", Kunde" + kunde;
-}
+	@Override
+	public String toString() {
+		return "Bankkonto [kontoNummer="
+			+ kontoNummer + ","
+			+ " kontostand="
+			+ kontoStand + ","
+			+ " kontoInhabe=" +
+			kontoInhabe.getNameKunde()
+			+ "]";
+	}
+
+
+
 
 }
+
+

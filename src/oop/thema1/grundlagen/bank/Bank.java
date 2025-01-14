@@ -3,32 +3,39 @@ package oop.thema1.grundlagen.bank;
 public class Bank {
 	// Statische Attribute
 
-	public static String nameBank;
+	private  String name; 
 
-	public static int anzahlKonten;
+	private  int anzahlKonten;
 	
 	//default Construktor
-	Bank(String string){}
+	public Bank() {
+		this.name = "Unbekannt";
+	}
 
 	// Statische Methode
-	public static void printBankInfo() {
-		System.out.println("Name der Bank: " + nameBank + ", die Zahl der Konten ist: " + anzahlKonten);
+	public void printBankInfo() {
+		System.out.println("Name der Bank: " + name + ", die Zahl der Konten ist: " + anzahlKonten);
 
+	//Alternative to String
+	//@Override
+	//publice String toString() {
+		//return "Bank [nameBank=" + nameBank + ", anzahlKonton " + anzahlKonten]";
+	
 	}
 
-	public static String getName() {
-		return nameBank;
+	public  String getName() {
+		return name;
 	}
 
-	public static void setName(String name) {
-		Bank.nameBank = name;
+	public  void setName(String name) {
+		this.name = name;
 	}
 
-	public static int getAnzahlKonten() {
+	public int getAnzahlKonten() {
 		return anzahlKonten;
 	}
 
-	public static void setAnzahlKonten(int anzahlKonten) {
-		Bank.anzahlKonten = anzahlKonten;
+	public void setAnzahlKonten(int anzahlKonten) {
+		this.anzahlKonten = anzahlKonten;
 	}
 }

@@ -12,8 +12,34 @@ public class Kunde {
 	
 	//Methode
 	
+	@Override
 	public String toString() {
-		return "Kunde: KundenId" + kundenID + ", Name: " + nameKunde + ", Adresse" + adresse;
+		return "Kunde [getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
+				+ "]";
+	}
+
+	public static String getKundenID() {
+		return kundenID;
+	}
+
+	public static void setKundenID(String kundenID) {
+		Kunde.kundenID = kundenID;
+	}
+
+	public static String getNameKunde() {
+		return nameKunde;
+	}
+
+	public static void setNameKunde(String nameKunde) {
+		Kunde.nameKunde = nameKunde;
+	}
+
+	public static String getAdresse() {
+		return adresse;
+	}
+
+	public static void setAdresse(String adresse) {
+		Kunde.adresse = adresse;
 	}
 
 	
