@@ -1,47 +1,41 @@
 package oop.thema1.grundlagen.bank;
 
 public class Kunde {
-	// Attribute
+
+	private String kundenId;
 	
-	public static String kundenID;
-	public static String nameKunde;
-	public static String adresse;
+	private String name;
 	
-	//default Construktor
-		Kunde(String string, String string2, String string3){}
-	
-	//Methode
-	
+	private String adresse;
+
 	@Override
 	public String toString() {
-		return "Kunde [getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
-				+ "]";
+		return "Kunde [kundenId=" + kundenId + ", name=" + name + ", adresse=" + adresse + "]";
 	}
 
-	public static String getKundenID() {
-		return kundenID;
+	public String getKundenId() {
+		return kundenId;
 	}
 
-	public static void setKundenID(String kundenID) {
-		Kunde.kundenID = kundenID;
+	public void setKundenId(String kundenId) {
+		this.kundenId = kundenId;
 	}
 
-	public static String getNameKunde() {
-		return nameKunde;
+	public String getName() {
+		return name;
 	}
 
-	public static void setNameKunde(String nameKunde) {
-		Kunde.nameKunde = nameKunde;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public static String getAdresse() {
+	public String getAdresse() {
 		return adresse;
 	}
 
-	public static void setAdresse(String adresse) {
-		Kunde.adresse = adresse;
+	public void setAdresse(String adresse) {
+		this.adresse = adresse;
 	}
-
 	
-
 }
+

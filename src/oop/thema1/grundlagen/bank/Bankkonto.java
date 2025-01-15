@@ -1,38 +1,38 @@
 package oop.thema1.grundlagen.bank;
 
+import oop.thema1.grundlagen.bank.Kunde;
+
 public class Bankkonto {
-	//Attribute
-	public  String kontoNummer;
-	public  double kontoStand;
-	public Kunde kontoInhabe;
+
+	private String kontoNummer;
 	
-	//default Construktor
-		Bankkonto(String string1, int int1, String string2){}
-		
-	//Methoden
-	public  void einzahlen(double betrag) {
+	private double kontoStand;
+	
+	private Kunde kontoInhaber;
+	
+	public void einzahlen(double betrag) {
 		kontoStand += betrag;
 	}
 	
-	public void auszahlen(double betrag) {
-		kontoStand -= betrag;
-		
+	public void abheben(double betrag) {
+		if(betrag <= kontoStand) {
+			kontoStand -= betrag;
+		} else {
+			System.err.println("Nicht genug Guthaben!");
+		}
 	}
-
+	
 	@Override
 	public String toString() {
-		return "Bankkonto [kontoNummer="
-			+ kontoNummer + ","
-			+ " kontostand="
-			+ kontoStand + ","
-			+ " kontoInhabe=" +
-			kontoInhabe.getNameKunde()
-			+ "]";
+
+		return "Konto: " 
+				+ kontoNummer 
+				+ ", Inhaber: " 
+				+ kontoInhaber.getName()
+				+ ", Kontostand: " 
+				+ kontoStand 
+				+ " EUR"; 
 	}
-
-
-
-
 }
 
 
