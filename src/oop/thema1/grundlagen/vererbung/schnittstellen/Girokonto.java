@@ -1,6 +1,6 @@
-package oop.thema1.grundlagen.banksystem;
+package oop.thema1.grundlagen.vererbung.schnittstellen;
 
-public class Girokonto extends Bankkonto implements Ueberziehbar{
+public class Girokonto extends Bankkonto implements Ueberzeihung{
 	
 	//Attibut
 	private double dispoLimit = 500; 
@@ -9,7 +9,7 @@ public class Girokonto extends Bankkonto implements Ueberziehbar{
 	//Methode
 			
 	@Override
-	public void abrechnung(double betrag) {
+	public void ueberziehungsPruefung(double betrag) {
 		if(betrag <= kontoStand + dispoLimit) {
 			this.kontoStand -= betrag;
 		} else {
