@@ -5,5 +5,6 @@ public interface Tier {
 	
 	void laufen();
 	void fressen();
+	void klettern();
 
 }
