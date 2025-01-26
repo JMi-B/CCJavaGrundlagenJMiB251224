@@ -1,5 +1,7 @@
 package oop.thema1.grundlagen.tictactoe;
 
+
+
 public class HumanPlayer extends AbstractPlayer {
 	
 	//Konstruktor
@@ -8,7 +10,7 @@ public class HumanPlayer extends AbstractPlayer {
 	    }
 
 	@Override
-	public String getName() {
+	public  String getName() {
 		return name;
 	}
 	

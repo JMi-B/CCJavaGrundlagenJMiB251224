@@ -1,6 +1,6 @@
 package oop.thema1.grundlagen.tictactoe;
 
-public class ComputerPlayer extends AbstractPlayer {
+public  class ComputerPlayer extends AbstractPlayer {
 
 	//Konstruktor
 	 public ComputerPlayer(Symbol symbol, String name) {
