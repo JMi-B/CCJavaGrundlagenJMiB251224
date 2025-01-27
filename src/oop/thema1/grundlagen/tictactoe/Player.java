@@ -4,7 +4,7 @@ public interface Player {
 
 	//Interface für die Spieler
 	
-	//void makeMove(Board board);//wird in der class board gefüllt
+	void makeMove(Board board);//wird in der class board gefüllt
 	
 	// Holt Symbol und Name
 	
