@@ -10,7 +10,7 @@ public interface GameConfig {
 	
 	HashMap<Symbol, String> spieler = new HashMap<>(); // Symbol als Key kürzer und immer eindeutig
 
- //void addSpieler(Symbol symbol, String name);
+  void addSpieler(Symbol symbol, String name);
 	
 	
 }
