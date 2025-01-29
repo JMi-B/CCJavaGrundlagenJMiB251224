@@ -1,4 +1,4 @@
-package oop.thema1.grundlagen.tictactoeJMiB;
+ package oop.thema1.grundlagen.tictactoeJMiB;
 
 import java.util.Scanner;
 

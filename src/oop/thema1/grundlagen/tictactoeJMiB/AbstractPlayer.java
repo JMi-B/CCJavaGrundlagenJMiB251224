@@ -1,4 +1,4 @@
-package oop.thema1.grundlagen.tictactoeJMiB;
+  package oop.thema1.grundlagen.tictactoeJMiB;
 
 public abstract class AbstractPlayer implements Player, GameConfig {
 
