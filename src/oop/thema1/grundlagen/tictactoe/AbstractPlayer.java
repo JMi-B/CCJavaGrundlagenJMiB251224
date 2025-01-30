@@ -7,7 +7,7 @@ public abstract class AbstractPlayer implements Player, GameConfig {
 	protected final Symbol symbol;
 
 	// Konstruktor
-	public AbstractPlayer(Symbol symbol, String name) {
+	public AbstractPlayer() {
 		this.name = name;
 		this.symbol = symbol;
 

@@ -8,7 +8,7 @@ public interface Player {
 	
 	// Holt Symbol und Name
 	
-	Symbol getSymbol(Symbol symbol);
+	Symbol getSymbol();
 	
 	String getName(String name);
 	

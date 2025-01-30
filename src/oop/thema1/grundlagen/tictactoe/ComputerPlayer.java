@@ -8,7 +8,7 @@ public class ComputerPlayer extends AbstractPlayer {
 
 	// Konstruktor
 	public ComputerPlayer(Symbol symbol, String name) {
-		super(symbol, name); // Name und Symbol korrekt an die abstrakte Klasse weitergeben
+		super(); // Name und Symbol korrekt an die abstrakte Klasse weitergeben
 	}
 
 	@Override
@@ -27,27 +27,31 @@ public class ComputerPlayer extends AbstractPlayer {
 	}
 
 	// todo:
+	int row, col;
+	
 	public void makeMove(Board board) {
 			
 			do {
-				row random.nextInt(GameConfig.Board_SIZE);
-				col random.nextInt(GameConfig.Board_SIZE);
+				row = random.nextInt(GameConfig.Board_SIZE);
+				col = random.nextInt(GameConfig.Board_SIZE);
 				
 			}while(!board.makeMove(row, col, symbol));
 			
-			System.out.println(name +"plaziert " +symbol +" auf("+ row + "," +col +")");
+			System.out.println(name +"plaziert " +symbol +" auf("+ row + "," + col +")");
 			
 		}
 
-	@Override
-	public Symbol getSymbol(Symbol symbol) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 
 	@Override
 	public String getName(String name) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@Override
+	public void addSpieler(Symbol symbol, String name) {
+		// TODO Auto-generated method stub
+		
 	}
 }
